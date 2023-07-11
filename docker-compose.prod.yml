@@ -1,0 +1,23 @@
+version: "3.7"
+
+services:  
+  # app service
+  s_cool_app:
+    restart: always 
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    env_file: 
+      - .env
+    expose:
+      - 3000
+    ports:
+      - "3000:3000"
+    networks:
+      - cool_app_network
+
+# shared network
+networks:
+  cool_app_network:
+    driver: bridge
+

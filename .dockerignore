@@ -1,0 +1,15 @@
+.idea/
+.idea/**/*
+
+.github/
+.github/**/*
+
+.next/
+.next/**/*
+
+
+node_modules/
+node_modules/**/*
+
+build/
+build/**/*
